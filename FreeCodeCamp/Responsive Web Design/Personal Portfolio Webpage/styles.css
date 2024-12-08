@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media screen and (max-width: 700px) {
+    #comunication {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Nunito Sans, sans-serif;
+}
+
+#navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #4A6D7C;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: rgba(0, 0, 0, 0.2) solid 2px;
+    z-index: 2;
+}
+
+#navbar a {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+}
+
+#navbar a:hover {
+    background-color: #62929E;
+}
+
+#welcome-section {
+    padding-top: 340px;
+    height: 100vh;
+    background: linear-gradient(0deg, #C6C5B9, #62929E);
+}
+
+#title, #subtitle {
+    text-align: center;
+    color: azure;
+}
+
+#title {
+    font-size: 58px;
+    font-family: Raleway;
+}
+
+#subtitle {
+    font-size: 34px;
+}
+
+#word-code {
+    animation: color-change 3s linear 0s infinite;
+}
+
+#word-name {
+    font-style: oblique;
+    color: #8fdaec;
+}
+
+@keyframes color-change {
+    0% {
+        color: azure;
+    }
+    40% {
+        color: #62929E;
+    }
+}
+
+#projects {
+    background-color: #8fdaec;
+    display: flex;
+    flex-direction: column;
+}
+
+#title2 {
+    text-align: center; 
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    font-style: italic;
+}
+
+#projects-div {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+img {
+    width: 400px;
+    height: 250px;
+    object-fit:contain;
+    border-radius: 3px;
+}
+
+.project-title {
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+#contact {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(37,61,71,1) 0%, rgba(13,30,37,1) 100%);
+    color: azure;
+}
+
+#title3 {
+    font-size: 50px;
+    font-family: Prompt;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#comunication {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#profile-link-div, #discord-div, #email-div, #phone-number-div {
+    display: inline-block;
+}
+
+i {
+    position: relative;
+    top: -5px;
+}
+
+i, .icon-desc, #profile-link {
+    display: inline-block;
+    font-size: 25px;
+}
+
+i, .icon-desc, #profile-link:hover {
+    cursor: pointer;
+}
+
+#profile-link, .project-tile {
+    text-decoration: none;
+    color: azure;
+}
+
+hr {
+    margin-top: 330px;
+    height: 5px ;
+    width: 100% ;
+    background-color: #aec2ca ; 
+}
+
+.info {
+    font-size: 18px;
+    display: inline-block;
+}
+
+#info-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.info {
+    margin: 0 10px;
+}
+
+.info:nth-of-type(2) {
+    margin-right: 40px;
+}

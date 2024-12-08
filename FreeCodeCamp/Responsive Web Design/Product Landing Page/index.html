@@ -1,0 +1,105 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/0df94b538e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <div id="logo">
+        <img
+          src="https://i.ibb.co/NyQKxFS/Logo.jpg"
+          alt="knife-logo"
+          id="header-img"
+        />
+        <h2 id="logo-name">Survival Knives</h2>
+      </div>
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#demonstration">Demonstration</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+    </header>
+    <main>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email address"
+          name="email"
+          required
+        />
+        <input type="submit" id="submit" value="SEND" />
+      </form>
+      <section id="features">
+        <div id="features-div">
+          <div id="icon-div">
+            <i class="fa-solid fa-truck"> </i>
+            <i class="fa-solid fa-star"> </i>
+            <i class="fa-solid fa-dollar-sign"> </i>
+          </div>
+          <div id="features-title-div">
+            <h1 class="feature-title">Fast Shipping</h1>
+            <p>
+              Get your knives quickly with our reliable and expedited shipping
+              options. We ensure your order is processed and delivered to your
+              doorstep as fast as possible.
+            </p>
+
+            <h1 class="feature-title">Premium Quality</h1>
+            <p>
+              Experience the craftsmanship of our premium-quality knives,
+              designed for durability, precision, and performance. Each knife is
+              made from top-grade materials to meet the highest standards.
+            </p>
+
+            <h1 class="feature-title">Refund Policy</h1>
+            <p>
+              Your satisfaction is our priority. If you're not completely happy
+              with your purchase, our hassle-free refund policy allows you to
+              return your knives within 30 days for a full refund.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="demonstration">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/IWx7g61CfEo?si=_l-7cL3jmnuGFH8H"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          id="video"
+        ></iframe>
+      </section>
+      <section id="pricing">
+        <div class="product">
+          <h2>Pocket Knife</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Price: $50</p>
+          <button>ORDER</button>
+        </div>
+        <div class="product">
+          <h2>Sharpening Stone</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Price: $30</p>
+          <button>ORDER</button>
+        </div>
+        <div class="product">
+          <h2>All In One Combo</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Price: $70</p>
+          <button>ORDER</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+    font-weight: 400;
+    background-color: rgb(241, 240, 239);
+}
+
+main {
+    width: 100%;
+}
+
+#img-div {
+    width: 100%;
+}
+
+#image {
+    display: block;
+    margin: 10px auto;
+    width: 40%;
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+#tribute-info {
+    display: block;
+    margin: 10px 20% 20px 27%;
+    font-size: 1.1rem;
+    text-align: left;
+    
+}
+
+#tribute-info > li {
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#link-paragraph {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#tribute-link {
+    text-decoration: none;
+    color: blue;
+}
+
+#img-caption {
+    width: 100%;
+    font-size: x-large;
+}
+
+#img-caption p {
+    text-align: center;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bold {
+    font-weight: 700;
+}

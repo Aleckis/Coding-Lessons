@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(228, 229, 230);
+}
+
+h1,
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+#main-frame {
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+    background-color: aqua;
+}

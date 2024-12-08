@@ -1,0 +1,200 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF_8" />
+    <meta name="viewport" content="width=device_width, initial_scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JavaScript Documentation</header>
+      <a class="nav-link" href="#Introduction_to_JavaScript"
+        >Introduction to JavaScript</a
+      >
+      <a class="nav-link" href="#Basic_Syntax_and_Data_Types"
+        >Basic Syntax and Data Types</a
+      >
+      <a class="nav-link" href="#Functions_and_Scope">Functions and Scope</a>
+      <a class="nav-link" href="#Objects_and_Arrays">Objects and Arrays</a>
+      <a class="nav-link" href="#DOM_and_Browser_Manipulation"
+        >DOM and Browser Manipulation</a
+      >
+      <a class="nav-link" href="#Asynchronous_Programming"
+        >Asynchronous Programming</a
+      >
+      <a class="nav-link" href="#ES6+_and_Modern_Features"
+        >ES6+ and Modern Features</a
+      >
+      <a class="nav-link" href="#Tools_and_Ecosystem">Tools and Ecosystem</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_JavaScript">
+        <header>Introduction to JavaScript</header>
+        <p>
+          JavaScript is a versatile and widely used programming language,
+          primarily in web development. Created in 1995 by Brendan Eich, it has
+          evolved from a simple tool for adding interactivity to web pages into
+          a robust language capable of creating complete applications, both on
+          the front-end and back-end.
+        </p>
+        <p>
+          Its popularity is due to its flexibility, ease of learning, and
+          universal support in modern browsers.
+        </p>
+      </section>
+      <section class="main-section" id="Basic_Syntax_and_Data_Types">
+        <header>Basic Syntax and Data Types</header>
+        <p>
+          JavaScript's syntax is designed to be accessible to beginner
+          programmers, yet powerful enough for experienced developers. The
+          language uses dynamic data types, meaning variables can store
+          different types of values over time. Basic types include numbers,
+          strings, booleans, null, and undefined. JavaScript also offers
+          familiar control structures such as if/else, switch, and loops,
+          allowing developers to create complex logic intuitively.
+        </p>
+        <p>Some types of data in JavaScript are:</p>
+        <ul>
+          <li>String</li>
+          <li>Number</li>
+          <li>Boolena</li>
+          <li>Undefined</li>
+          <li>Null</li>
+        </ul>
+        <code
+          >// Numbers: <br />
+          let length = 16; <br />
+          let weight = 7.5; <br /><br />
+          // Strings: <br />
+          let color = "Yellow"; <br />
+          let lastName = "Johnson"; <br /><br />
+          // Booleans <br />
+          let x = true; <br />
+          let y = false;
+        </code>
+        <p>
+          The code example above shows the declaration of some variables of the
+          following types: number, string and boolean.
+        </p>
+      </section>
+      <section class="main-section" id="Functions_and_Scope">
+        <header>Functions and Scope</header>
+        <p>
+          Functions are fundamental building blocks in JavaScript, allowing for
+          code organization and reuse. They can be declared in various ways,
+          including named functions, function expressions, and more recently,
+          arrow functions.
+        </p>
+        <code
+          >// Function to compute the product of p1 and p2 <br />
+          function myFunction(p1, p2) { <br />
+          return p1 * p2; <br />
+          }</code
+        >
+        <p>
+          Scope in JavaScript determines the visibility and accessibility of
+          variables, with important concepts such as global, local, and block
+          scope. Understanding scope is crucial for avoiding bugs and creating
+          more efficient and organized code.
+        </p>
+      </section>
+      <section class="main-section" id="Objects_and_Arrays">
+        <header>Objects and Arrays</header>
+        <p>
+          Objects and arrays are essential data structures in JavaScript.
+          Objects allow grouping related data and functionalities, while arrays
+          are used to store ordered lists of elements.
+        </p>
+        <code
+          >//JavaScript object <br />
+          const car = {type:"Fiat", model:"500", color:"white"}; <br /><br />
+          //Javascript arrays <br />
+          const cars = ["Saab", "Volvo", "BMW"];</code
+        >
+        <p>
+          JavaScript offers a variety of methods to manipulate these structures,
+          such as map, filter, and reduce for arrays, which facilitate complex
+          data operations.
+        </p>
+        <code
+          >const numbers = [1, 2, 3, 4, 5]; <br />
+          const doubled = numbers.map(num => num * 2); <br />
+          console.log(doubled); // Output: [2, 4, 6, 8, 10]</code
+        >
+      </section>
+      <section class="main-section" id="DOM_and_Browser_Manipulation">
+        <header>DOM and Browser Manipulation</header>
+        <p>
+          The Document Object Model (DOM) is a programming interface for HTML
+          and XML documents. JavaScript can interact with the DOM to dynamically
+          modify the content, structure, and style of web pages. This includes
+          the ability to select elements, change their content, add or remove
+          elements, and respond to user events.
+        </p>
+        <p>
+          Additionally, JavaScript can interact with browser APIs for
+          functionalities such as local storage, geolocation, and much more.
+        </p>
+      </section>
+      <section class="main-section" id="Asynchronous_Programming">
+        <header>Asynchronous Programming</header>
+        <p>
+          Asynchronous programming is a crucial concept in JavaScript,
+          especially for operations that may take time, such as network
+          requests. JavaScript offers several ways to handle asynchronous
+          operations, from traditional callbacks to Promises and the more recent
+          async/await pattern.
+        </p>
+        <p>
+          These tools allow developers to write code that efficiently handles
+          long-running operations without blocking program execution.
+        </p>
+      </section>
+      <section class="main-section" id="ES6+_and_Modern_Features">
+        <header>ES6+ and Modern Features</header>
+        <p>
+          ECMAScript 6 (ES6) and subsequent versions brought significant
+          improvements to JavaScript. This includes new ways of declaring
+          variables (let and const), more concise syntax for functions (arrow
+          functions), better string handling (template literals), and new data
+          types like Set and Map.
+        </p>
+        <code
+          >// Arrow function and template literal<br />
+          const greet = name => `Hello, ${name}!`;<br />
+          <br />
+          // Destructuring and default parameter<br />
+          const displayInfo = ({ name = 'Guest', age = 'Unknown' } = {}) => {<br />
+          console.log(`Name: ${name}, Age: ${age}`);<br />
+          };<br />
+          <br />
+          // Usage<br />
+          console.log(greet('Alice')); // Output: Hello, Alice!<br />
+          displayInfo({ name: 'Bob', age: 30 }); // Output: Name: Bob, Age:
+          30<br />
+          displayInfo(); // Output: Name: Guest, Age: Unknown<br
+        /></code>
+        <p>
+          Additionally, the introduction of native modules and classes
+          significantly improved code organization and reuse in JavaScript
+          projects.
+        </p>
+      </section>
+      <section class="main-section" id="Tools_and_Ecosystem">
+        <header>Tools and Ecosystem</header>
+        <p>
+          The JavaScript ecosystem is vast and constantly evolving. Node.js
+          expanded the use of JavaScript to the server-side, while npm became
+          the world's largest software package repository. Build tools like
+          Webpack and Rollup help optimize code for production.
+        </p>
+        <p>
+          Frameworks such as React, Vue, and Angular dominate front-end
+          development, while testing libraries like Jest ensure code quality.
+          This rich ecosystem allows developers to create complex and scalable
+          applications using JavaScript.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

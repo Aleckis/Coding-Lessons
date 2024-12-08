@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utc-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Fill the form bellow for a cookie!</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Essential Info</legend>
+        <label id="name-label" for="name">Enter your name</label><input id="name" type="text" placeholder="e.g. Cleyton Silva" required>
+        <label id="email-label" for="email">Enter your email</label><input id="email" type="email" placeholder="e.g. cleytindograu@yahoo.br" required>
+        <label id="number-label" for="number">Enter your age</label><input id="number" type="number" min="13" max="100" placeholder="e.g. 25" required>
+      </fieldset>
+      <fieldset>
+        <legend>Let us know more about you</legend>
+      <label for="dropdown">Are you a cat or dog person?</label>
+      <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Cats are clearly better</option>
+        <option value="2">No, dogs are much superior</option>
+        <option value="3">I do not have a heart and dislike both</option>
+      </select>
+
+      <label>What is your gender?</label>
+      <input id="radio-male" class="option-radio" value="male" name="gender" type="radio"><label for="radio-male" class="option-radio" id="male">Male</label>
+      <input id="radio-female" class="option-radio" value="female" name="gender" type="radio"><label for="radio-female" class="option-radio" id="female">Female</label>
+      <input id="radio-undefined" class="option-radio" value="undefined" name="gender" type="radio"><label for="radio-undefined" class="option-radio" id="undefined">Prefer not to say</label>
+      </fieldset>
+      <fieldset>
+        <legend>Final touches</legend>
+        <label>What type of vehicle do you like?</label>
+        <input class="option-check" id="vehicle-car" type="checkbox" value="1"><label class="option-check" for="vehicle-car">Car</label>
+        <input class="option-check" id="vehicle-bike" type="checkbox" value="2"><label class="option-check" for="vehicle-bike">Bike</label>
+        <input class="option-check" id="vehicle-boat" type="checkbox" value="3"><label class="option-check" for="vehicle-boat">Boat</label>
+        <input class="option-check" id="vehicle-plane" type="checkbox" value="4"><label class="option-check" for="vehicle-plane">Plane</label>
+        <input class="option-check" id="vehicle-helicopter" type="checkbox" value="5"><label class="option-check" for="vehicle-helicopter">Helicopter</label>
+        <label for="bio">Write a personal biography</label>
+        <textarea cols="61" rows="3" placeholder="Hello, I am Cleyton, and I like to ride my bike and do wheelies."></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  font-family: Roboto mono, sans-serif; 
+  background-image: url(https://pixahive.com/wp-content/uploads/2021/02/Bluish-abstract-background-325684-pixahive.jpg);
+  background-size: cover;
+  color: #f7f7f7
+}
+
+form {
+  margin: 20px auto 0px auto;
+  max-width: 500px;
+  min-width: 400px;
+}
+
+fieldset {
+  margin: 20px 0;
+  border: 2px solid #f7f7f7;
+  border-radius: 7px;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+label, input {
+  display: inline-block;
+}
+
+label {
+  margin: 4px 0;
+  width: 100%;
+}
+
+.option-check, .option-radio {
+  width: unset;
+}
+
+label.option-radio {
+  text-align: left;
+  margin-right: 81%;
+  margin-bottom: 2px;
+}
+label.option-radio:last-of-type {
+  margin-right: unset;
+  margin-bottom: unset;
+}
+
+
+input, select {
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  background-color: #f7f7f7;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  height: 1.3rem;
+}
+
+input[type="submit"] {
+  border-radius: unset;
+  height: 30px;
+  border: 3px solid black 
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(11,14,60);
+  color: #f7f7f7;
+  border-color: #f7f7f7;
+}
+
+h1, p {
+  text-align: center;
+}
+
+h1 {
+  font-family: Rowdies, sans-serif;
+}

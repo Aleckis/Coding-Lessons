@@ -1,0 +1,85 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #drum-machine {
+    width: 500px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #display {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .pads-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .drum-pad {
+    background-color: #555;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .drum-pad:active,
+  .drum-pad:hover {
+    background-color: #777;
+  }
+  
+  .drum-pad:focus {
+    outline: none;
+  }
+  
+  .drum-pad span {
+    font-size: 2.5rem;
+  }
+  
+  audio {
+    display: none;
+  }
+  
+  /* Small screen adjustments */
+  @media (max-width: 600px) {
+    #drum-machine {
+      width: 90%;
+    }
+  
+    #display {
+      font-size: 1rem;
+    }
+  
+    .drum-pad {
+      height: 70px;
+      font-size: 1.5rem;
+    }
+  }
+  

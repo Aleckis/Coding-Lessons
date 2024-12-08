@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@media (max-width: 650px) {
+    #navbar {
+        width: 200px !important;
+    }
+
+    #navbar * {
+        width: 200px;
+    }
+
+    #navbar a {
+        height: 5vh;
+        min-height: 58px;
+        font-size: 20px !important;
+    }
+
+    #navbar header {
+        font-size: 24px !important;
+    }
+
+    main {
+        margin-left: 210px !important;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: azure;
+    font-family: Open Sans;
+    font-size: 16px;
+}
+
+header {
+    font-size: 32px;
+}
+
+main {
+    margin-left: 370px;
+    padding-right: 3%;
+}
+
+#navbar {
+    width: 360px;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-right: 2px black solid;
+}
+
+#navbar * {
+    padding-left: 3%;
+}
+
+#navbar header {
+    font-weight: bold;
+    font-size: 44px;
+    font-family: Merriweather, sans-serif;
+}
+
+#navbar a {
+    height: 7.5vh;
+    font-size: 2.8vh;
+    text-decoration: none;
+    color: black;
+    border-top: 2px black solid;
+}
+
+code {
+    display: block;
+    background-color: beige;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-family: Source Code Pro;
+    font-size: 15px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 17px;
+    margin: 5px 0;
+}

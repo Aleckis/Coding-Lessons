@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cash Register Project</h1>
+
+        
+
+        <div class="input-area">
+            <label for="cash">Enter cash from customer:</label>
+            <input type="number" id="cash" placeholder="Enter cash" min="0" step="0.01">
+            <button id="purchase-btn">Purchase</button>
+        </div>
+
+        <div class="total">
+            <p>Total: $<span id="total-amount">0.00</span></p>
+        </div>
+
+        <div class="register">
+            <h2>Cash in Drawer:</h2>
+            <ul id="cash-in-register">
+                <li>Pennies: $<span id="pennies">0.00</span></li>
+                <li>Nickels: $<span id="nickels">0.00</span></li>
+                <li>Dimes: $<span id="dimes">0.00</span></li>
+                <li>Quarters: $<span id="quarters">0.00</span></li>
+                <li>Ones: $<span id="ones">0.00</span></li>
+                <li>Fives: $<span id="fives">0.00</span></li>
+                <li>Tens: $<span id="tens">0.00</span></li>
+                <li>Twenties: $<span id="twenties">0.00</span></li>
+                <li>Hundreds: $<span id="hundreds">0.00</span></li>
+            </ul>
+        </div>
+
+        <div id="change-due">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

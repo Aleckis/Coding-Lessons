@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Drum Machine</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="drum-machine">
+    <div id="display">Press a key to play a sound</div>
+    
+    <div class="pads-container">
+      <div class="drum-pad" id="heater1-pad">
+        <audio class="clip" id="Q" data-identifier="Heater 1" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-1.mp3"></audio>
+        Q
+      </div>
+      <div class="drum-pad" id="heater2-pad">
+        <audio class="clip" id="W" data-identifier="Heater 2" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-2.mp3"></audio>
+        W
+      </div>
+      <div class="drum-pad" id="heater3-pad">
+        <audio class="clip" id="E" data-identifier="Heater 3" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-3.mp3"></audio>
+        E
+      </div>
+      <div class="drum-pad" id="heater4-pad">
+        <audio class="clip" id="A" data-identifier="Heater 4" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-4_1.mp3"></audio>
+        A
+      </div>
+      <div class="drum-pad" id="clap-pad">
+        <audio class="clip" id="S" data-identifier="Clap" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-6.mp3"></audio>
+        S
+      </div>
+      <div class="drum-pad" id="open-hh-pad">
+        <audio class="clip" id="D" data-identifier="Open HH" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Dsc_Oh.mp3"></audio>
+        D
+      </div>
+      <div class="drum-pad" id="kick-n-hat-pad">
+        <audio class="clip" id="Z" data-identifier="Kick n' Hat" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Kick_n_Hat.mp3"></audio>
+        Z
+      </div>
+      <div class="drum-pad" id="kick-pad">
+        <audio class="clip" id="X" data-identifier="Kick" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/RP4_KICK_1.mp3"></audio>
+        X
+      </div>
+      <div class="drum-pad" id="closed-hh-pad">
+        <audio class="clip" id="C" data-identifier="Closed HH" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Cev_H2.mp3"></audio>
+        C
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
